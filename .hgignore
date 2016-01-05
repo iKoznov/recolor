@@ -1,0 +1,29 @@
+syntax: glob
+
+web/var
+web/build
+web/tmp
+
+__pycache__
+
+.project
+.pydevproject
+
+# Mac OS
+.DS_Store
+
+
+syntax: regexp
+
+# ignore hidden files (started from ".") exept of hg* files
+(^|[\\/])\.(?!(hg))
+
+# ignore ubuntu temporary files
+~$
+
+# kDevelop
+\.kdev4$
+
+# astyle
+\.orig$
+
